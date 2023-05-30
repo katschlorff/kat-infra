@@ -17,7 +17,7 @@ func kat_say() {
 func main() {
 	// kat_say()
 	// Serve static files from the frontend/dist directory.
-	fs := http.FileServer(http.Dir("./app/dist"))
+	fs := http.FileServer(http.Dir("./dist"))
 	http.Handle("/", fs)
 
 	// Start the server.
