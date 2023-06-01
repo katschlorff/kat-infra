@@ -1,12 +1,9 @@
 <template>
   <img alt="Vue logo" src="./assets/unicorn-cat.png">
   <!-- <KatComponent msg="😻 FAT PUSSY RULES 😻" /> -->
-  <KatComponent msg="Kat is writing code!😺🖥️👩🏼‍🔬" />
-  <p>Hi! You've made it to Kat's personal website. This is just a fun lil thing that I'm doing to keep my engineering
-    skills sharp and to learn something new - Vue.js!
-    This website won't contain tons of pictures or frequest updates; I generally have a pretty small online presence and I
-    like it that way. I do, however, maintain the right to write about whatever the hell I want, tech-related or
-    otherwise.
+  <KatComponent msg="Trans rights are human rights!" />
+  <BigCard></BigCard>
+  <p class="gradient">
   </p>
   <h2>So, what is a Kat?</h2>
   <div class="card border-primary mb-3" style="max-width: 20rem; margin: auto; background-color: white;" >
@@ -26,37 +23,27 @@
     </p>
   </div>
 </div>
-  <ul>
-    <li class="li-red"><span>Bingus!</span></li>
-    <li class="li-orange"><span>Bingus!</span></li>
-    <li class="li-yellow"><span>Bingus!</span></li>
-    <li class="li-green"><span>Bingus!</span></li>
-    <li class="li-blue"><span>Bingus!</span></li>
-    <li class="li-indigo"><span>Bingus!</span></li>
-    <li class="li-purple"><span>Bingus!</span></li>
-  </ul>
   <p>Well, these days, I mainly do Terraform development for internal platforms, but some other high-leverage tools I
     really enjoy are Go and Python.</p>
-  <!-- <button type="button" class="btn btn-primary">Primary</button>
-  <button type="button" class="btn btn-secondary">Secondary</button>
-  <button type="button" class="btn btn-success">Success</button>
-  <button type="button" class="btn btn-info">Info</button>
-  <button type="button" class="btn btn-warning">Warning</button>
-  <button type="button" class="btn btn-danger">Danger</button>
-  <button type="button" class="btn btn-light">Light</button>
-  <button type="button" class="btn btn-dark">Dark</button>
-  <button type="button" class="btn btn-link">Link</button> -->
+  <h3>Attributions:</h3>
+  <ul>
+    <li>Cat Unicorn image: unable to find attribution</li>
+    <li>Theme: <a href="https://bootswatch.com/quartz/">Quartz, from the Bootswatch project</a></li>
+    <li><a href="https://getbootstrap.io">Bootstrap</a></li>
+  </ul>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
+import BigCard from './components/BigCard.vue';
 import KatComponent from './components/KatComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    KatComponent
-  }
+    KatComponent,
+    BigCard
+}
 }
 </script>
 
@@ -70,6 +57,14 @@ export default {
   padding-right: 10%;
   color: #FFFFFF;
   margin-top: 60px;
+}
+
+.gradient {
+  background: -moz-linear-gradient(left, var(--bs-red), var(--bs-orange),var(--bs-yellow),var(--bs-green),var(--bs-teal),var(--bs-blue),var(--bs-indigo), var(--bs-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #FFFFFF;
 }
 
 h2 {
@@ -93,7 +88,7 @@ h2 {
 }
 
 ul {
-  list-style-type: lower-greek;
+  list-style-type: disc;
 }
 
 .li-red {
