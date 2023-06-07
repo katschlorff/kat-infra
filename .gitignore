@@ -2,4 +2,4 @@
 terraform/.terraform/*
 node_modules/*
 pkg/http/web/node_modules/*
-terraform/terraform.tfstate
+terraform/terraform.tfstate*
