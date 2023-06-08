@@ -1,28 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/unicorn-cat.png">
-  <!-- <KatComponent msg="😻 FAT PUSSY RULES 😻" /> -->
-  <KatComponent msg="Trans rights are human rights!" />
-  <BigCard></BigCard>
+  <img alt="Cartoon Unicorn Cat" src="./assets/unicorn-cat.png">
+  <KatComponent style="margin-bottom: 2rem;" msg="Hi! I'm Kat Joy." />
+  <BigCard cardtext="This is my personal website. This is just a fun lil thing that I'm doing to
+        keep my engineering
+        skills sharp and to learn something new - Vue.js!
+        This website won't contain tons of personal pictures or frequest updates; I generally have a pretty small online presence
+        and I like it that way. I do, however, maintain the right to write about whatever the hell I want, tech-related or
+        otherwise."></BigCard>
   <p class="gradient">
   </p>
   <h2>So, what is a Kat?</h2>
-  <div class="card border-primary mb-3" style="max-width: 20rem; margin: auto; background-color: white;" >
-  <div class="card-header" style="margin-bottom: -10%;">So, what is a Kat?</div>
-  <div class="card-body">
-    <h4 class="card-title" style="color: var(--bs-gray);">A Kat is:</h4>
-    <p class="card-text">
+  <div class="card border-primary mb-3" style="max-width: 20rem; margin: auto; background-color: white;">
+    <div class="card-header" style="margin-bottom: -10%;">So, what is a Kat?</div>
+    <div class="card-body">
+      <h4 class="card-title" style="color: var(--bs-gray);">A Kat is:</h4>
+      <p class="card-text">
       <ul>
-    <li class="li-red"><span>Bingus!</span></li>
-    <li class="li-orange"><span>Bingus!</span></li>
-    <li class="li-yellow"><span>Bingus!</span></li>
-    <li class="li-green"><span>Bingus!</span></li>
-    <li class="li-blue"><span>Bingus!</span></li>
-    <li class="li-indigo"><span>Bingus!</span></li>
-    <li class="li-purple"><span>Bingus!</span></li>
-  </ul>
-    </p>
+        <li class="li-red"><span>Bingus!</span></li>
+        <li class="li-orange"><span>Bingus!</span></li>
+        <li class="li-yellow"><span>Bingus!</span></li>
+        <li class="li-green"><span>Bingus!</span></li>
+        <li class="li-blue"><span>Bingus!</span></li>
+        <li class="li-indigo"><span>Bingus!</span></li>
+        <li class="li-purple"><span>Bingus!</span></li>
+      </ul>
+      </p>
+    </div>
   </div>
-</div>
   <p>Well, these days, I mainly do Terraform development for internal platforms, but some other high-leverage tools I
     really enjoy are Go and Python.</p>
   <h3>Attributions:</h3>
@@ -34,7 +38,6 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import BigCard from './components/BigCard.vue';
 import KatComponent from './components/KatComponent.vue';
 
@@ -43,12 +46,13 @@ export default {
   components: {
     KatComponent,
     BigCard
-}
+  }
 }
 </script>
 
 <style>
 #app {
+  font-size: large;
   font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -60,7 +64,7 @@ export default {
 }
 
 .gradient {
-  background: -moz-linear-gradient(left, var(--bs-red), var(--bs-orange),var(--bs-yellow),var(--bs-green),var(--bs-teal),var(--bs-blue),var(--bs-indigo), var(--bs-purple));
+  background: -linear-gradient (left, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-teal), var(--bs-blue), var(--bs-indigo), var(--bs-purple));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -70,7 +74,7 @@ export default {
 h2 {
   font-size: xx-large;
   word-spacing: 4rem;
-  background: -webkit-linear-gradient(left, var(--bs-pink), var(--bs-blue));
+  background: -linear-gradient(left, var(--bs-pink), var(--bs-blue));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,8 +83,7 @@ h2 {
 
 .card-header {
   font-size: xx-large;
-  /* word-spacing: 4rem; */
-  background: -webkit-linear-gradient(left, var(--bs-pink), var(--bs-blue));
+  background: -linear-gradient(left, var(--bs-pink), var(--bs-blue));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,4 +132,5 @@ ul {
 
 ul>li>span {
   -webkit-text-fill-color: var(--bs-gray);
-}</style>
+}
+</style>
