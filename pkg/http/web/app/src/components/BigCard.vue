@@ -19,7 +19,8 @@ export default {
 
 <style scoped>
 .card-text {
-  background: -linear-gradient(left, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-teal), var(--bs-blue), var(--bs-indigo), var(--bs-purple));
+  background: -moz-linear-gradient(left, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-teal), var(--bs-blue), var(--bs-indigo), var(--bs-purple));
+  background: -webkit-linear-gradient(left, var(--bs-red), var(--bs-orange), var(--bs-yellow), var(--bs-green), var(--bs-teal), var(--bs-blue), var(--bs-indigo), var(--bs-purple));
   -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
