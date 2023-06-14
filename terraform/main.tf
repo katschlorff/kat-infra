@@ -1,6 +1,6 @@
 locals {
   iowa                   = "us-central1"
-  docker_image_tag_index = "3"
+  docker_image_tag_index = "4"
 }
 
 resource "google_artifact_registry_repository" "kat_web_repository" {
