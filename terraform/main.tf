@@ -39,3 +39,17 @@ resource "google_cloud_run_v2_service_iam_member" "enable_public_access" {
   member   = "allUsers"
 }
 
+resource "google_compute_global_address" "kat_infra_global_address" {
+  name         = "kat-infra-global-address"
+  address_type = "EXTERNAL"
+  project      = var.project_id
+}
+
+resource "google_certificate_manager_certificate" "kat_dot_computer_cert" {
+  name    = "kat-computer"
+  project = var.project_id
+  self_managed {
+    pem_certificate = var.pem_certificate
+    pem_private_key = var.pem_private_key
+  }
+}

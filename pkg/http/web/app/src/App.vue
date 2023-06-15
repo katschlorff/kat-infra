@@ -7,11 +7,12 @@
         and I like it that way. I do, however, maintain the right to write about whatever the hell I want, tech-related or
         otherwise.">
   </BigCard>
+  <BigCard cardtitle="Things in progress for this website" :cardlist="['SSL and a proper A name - currently waiting on CNAME validation with namecheap', 'global https load balancer', 'backend api features', 'an original image commissioned from my friend Vee', 'Better attributions (links rendered in text are placeholding til I can work that into the component  )']"></BigCard>
   <BigCard cardtitle="What is Kat up to?" cardtext="These days, I mainly do Terraform development for internal platforms, but some other
         high-leverage tools I
         really enjoy are Go and Python."></BigCard>
   <BigCard cardtitle="What's it like to work with me?"
-    cardtext="I love to work independently when spiking on something, or when deep-diving into anything new, like a new cloud service or Terraform provider. However, when engaging with software organization at large, I enjoy seeking out opportunities to teach through one-on-one pair or mob programming, presentations, documentation, and developer relations. I do my best to create an energetic, enthusiastic culture of exchange, where help is freely given and received, and internal solutions are truly agile and meaningfully responsive to internal customer needs.">
+    cardtext="I love to work independently when spiking on something, or when deep-diving into anything new, like a new cloud service or Terraform provider. However, when engaging with the software organization at large, I enjoy seeking out opportunities to teach through one-on-one pair or mob programming, presentations, documentation, and developer relations. I do my best to create an energetic, enthusiastic culture of exchange, where help is freely given and received, and internal solutions are truly agile and meaningfully responsive to internal customer needs.">
   </BigCard>
   <BigCard cardtitle="Engineering details"
     cardtext="This website was made using Vue.js, with a Go backend, running in a Docker container. The application is running on Google Cloud Platform Cloud Run. DNS CNAME for kat.computer provided by Namecheap. Repository here: https://github.com/katschlorff/kat-infra.">
