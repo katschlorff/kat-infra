@@ -1,6 +1,7 @@
 locals {
   iowa                 = "us-central1"
-  docker_image_version = jsondecode(file("./version.json,"))
+  json                 = jsondecode(file("${path.module}/version.json"))
+  docker_image_version = local.json["version"]
 }
 
 resource "google_artifact_registry_repository" "kat_web_repository" {
