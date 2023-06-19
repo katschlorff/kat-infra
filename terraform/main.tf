@@ -1,6 +1,6 @@
 locals {
-  iowa                   = "us-central1"
-  docker_image_tag_index = "4"
+  iowa                 = "us-central1"
+  docker_image_version = jsondecode(file("./version.json,"))
 }
 
 resource "google_artifact_registry_repository" "kat_web_repository" {
@@ -16,7 +16,7 @@ resource "google_cloud_run_v2_service" "kat_web_cloud_run" {
   template {
     containers {
       name  = "kat-web"
-      image = "us-central1-docker.pkg.dev/iron-inkwell-389101/kat-web/kat-web:${local.docker_image_tag_index}"
+      image = "us-central1-docker.pkg.dev/iron-inkwell-389101/kat-web/kat-web:${local.docker_image_version}"
       ports {
         container_port = 8080
       }

@@ -7,7 +7,9 @@
         and I like it that way. I do, however, maintain the right to write about whatever the hell I want, tech-related or
         otherwise.">
   </BigCard>
-  <BigCard cardtitle="Things in progress for this website" :cardlist="['SSL and a proper A name - currently waiting on CNAME validation with namecheap', 'global https load balancer', 'backend api features', 'an original image commissioned from my friend Vee', 'Better attributions (links rendered in text are placeholding til I can work that into the component  )']"></BigCard>
+  <BigCard cardtitle="Things in progress for this website"
+    :cardlist="['Importing the global load balancer state into terraform ', 'visual updates and refinement', 'backend api features', 'an original image commissioned from my friend Vee', 'Better attributions (links rendered in text are placeholding til I can work that into the component  )']">
+  </BigCard>
   <BigCard cardtitle="What is Kat up to?" cardtext="These days, I mainly do Terraform development for internal platforms, but some other
         high-leverage tools I
         really enjoy are Go and Python."></BigCard>
@@ -19,9 +21,12 @@
   </BigCard>
   <BigCard cardtitle="What do I want to learn?" cardtext="Rust! Guitar! More cooking. More art and creative expression.">
   </BigCard>
+  <BigCard cardtitle="What is Kat reading?"
+    :cardlist="['Abolition Geography: Essays Toward Liberation - Ruth Wilson Gilmore', 'Southern Gods - John Hornor Jacobs']">
+  </BigCard>
   <BigCard cardtitle="Attributions" :cardlist="['Cat Unicorn image: unable to find original attribution. If this artwork belongs to you, or if you know who the original creator is, drop me a line.',
-    'Theme: <a href=https://bootswatch.com/quartz/>Quartz, from the Bootswatch project</a>',
-    '<a href=https://getbootstrap.io>Bootstrap</a>', 'test', 'test','test','test','test']"></BigCard>
+    'Theme: Quartz, from the Bootswatch project: https://bootswatch.com/quartz/>',
+    'Bootstrap: https://getbootstrap.io',]"></BigCard>
 </template>
 
 <script>
