@@ -1,14 +1,14 @@
 <template>
-  <img alt="Cartoon Unicorn Cat" src="./assets/unicorn-cat.png">
+  <img alt="Cartoon Unicorn Cat" src="./assets/unicorn-kat.png" height="750" width="750" style="padding-bottom: 3rem; margin-top: -2.1rem;">
   <KatComponent style="margin-bottom: 2rem;" msg="Hi! I'm Kat Joy." />
   <BigCard cardtext="This is my personal website. This is just a fun lil thing that I'm doing to
         keep my engineering skills sharp and to learn something new - Vue.js!
-        This website probably won't contain tons of personal pictures or frequest updates; I generally have a pretty small online presence
+        This website probably won't contain tons of personal pictures or frequent updates; I generally have a pretty small online presence
         and I like it that way. I do, however, maintain the right to write about whatever the hell I want, tech-related or
         otherwise.">
   </BigCard>
   <BigCard cardtitle="Things in progress for this website"
-    :cardlist="['Importing the global load balancer state into terraform ', 'visual updates and refinement', 'backend api features', 'an original image commissioned from my friend Vee', 'Better attributions (links rendered in text are placeholding til I can work that into the component  )']">
+    :cardlist="['Importing the global load balancer state into terraform ', 'visual updates and refinement - color scheme', 'backend api features', 'Better attributions (links rendered in text are placeholding til I can work that into the component  )']">
   </BigCard>
   <BigCard cardtitle="What is Kat up to?" cardtext="These days, I mainly do Terraform development for internal platforms, but some other
         high-leverage tools I
@@ -24,7 +24,7 @@
   <BigCard cardtitle="What is Kat reading?"
     :cardlist="['Abolition Geography: Essays Toward Liberation - Ruth Wilson Gilmore', 'Southern Gods - John Hornor Jacobs']">
   </BigCard>
-  <BigCard cardtitle="Attributions" :cardlist="['Cat Unicorn image: unable to find original attribution. If this artwork belongs to you, or if you know who the original creator is, drop me a line.',
+  <BigCard cardtitle="Attributions" :cardlist="['Cat Unicorn image: Vee Prohaska',
     'Theme: Quartz, from the Bootswatch project: https://bootswatch.com/quartz/>',
     'Bootstrap: https://getbootstrap.io',]"></BigCard>
 </template>
