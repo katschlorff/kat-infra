@@ -5,7 +5,7 @@ RUN yarn
 RUN yarn build
 #ENTRYPOINT /bin/bash
 
-FROM golang:1.20.4-bullseye
+FROM golang:1.21rc3-bullseye
 WORKDIR /root/
 COPY --from=build /root/dist/ ./dist
 COPY ./go.mod /root/
